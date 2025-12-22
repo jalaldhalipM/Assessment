@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Behaviour & Teaching Mindset Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Landing Page -->
+        <section id="landing-page" class="view active">
+            <div class="content">
+                <h1><span class="brand-highlight">WeLe</span> Trainer Behaviour & Teaching Mindset Assessment</h1>
+                <p class="description">
+                    This assessment evaluates teaching mindset, emotional intelligence, learner-centricity, and
+                    adaptability through situational questions.
+                </p>
+                <div class="features">
+                    <div class="feature-item">
+                        <span class="icon">⏱️</span>
+                        <span>~5 Minutes</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="icon">🧩</span>
+                        <span>20 Questions</span>
+                    </div>
+                </div>
+                <button id="start-btn" class="btn primary-btn">Start Assessment</button>
+            </div>
+        </section>
+
+        <!-- Assessment Page -->
+        <section id="assessment-page" class="view hidden">
+            <div class="assessment-header">
+                <div class="progress-container">
+                    <div class="progress-bar-bg">
+                        <div id="progress-bar" class="progress-bar-fill" style="width: 0%"></div>
+                    </div>
+                    <span id="progress-text">Question 1 / 20</span>
+                </div>
+            </div>
+
+            <div class="question-card">
+                <h2 id="question-text">Question text goes here?</h2>
+                <div id="options-container" class="options-group">
+                    <!-- Options will be injected here -->
+                </div>
+            </div>
+
+            <div class="assessment-footer">
+                <button id="next-btn" class="btn primary-btn" disabled>Next</button>
+            </div>
+        </section>
+
+        <!-- Result Page -->
+        <section id="result-page" class="view hidden">
+            <div class="result-card">
+                <h2>Assessment Complete</h2>
+
+                <div class="score-display">
+                    <div class="score-circle">
+                        <span id="score-value">0</span>
+                        <span class="score-total">/ 40</span>
+                    </div>
+                    <p id="percentage-value">0%</p>
+                </div>
+
+                <div class="readiness-level">
+                    <h3>Trainer Readiness Level</h3>
+                    <h2 id="readiness-text" class="status-badge">Calculating...</h2>
+                    <p id="readiness-description" class="result-message">
+                        Message placeholder.
+                    </p>
+                </div>
+
+                <button id="restart-btn" class="btn secondary-btn">Restart Assessment</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
