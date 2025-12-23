@@ -132,20 +132,20 @@ function showResult() {
     let colorClass = '';
 
     if (totalScore >= 32) {
-        level = "Excellent Teaching Mindset";
-        message = "You demonstrate exceptional learner-centricity, adaptability, and emotional intelligence. You are ready to lead and mentor others.";
+        level = "Strong SME with natural teaching mindset";
+        message = "You have an excellent balance of subject matter expertise and learner-centricity. You demonstrate high emotional intelligence, adaptability, and a genuine desire to enable others.";
         colorClass = '#00bf53'; // Brand Green
     } else if (totalScore >= 24) {
-        level = "Strong & Coachable Trainer";
-        message = "You have a solid foundation in teaching principles. With minor refinements in adaptability or empathy, you can reach excellence.";
+        level = "High-potential trainer, coachable";
+        message = "You have the right instincts but may occasionally lean on authority or structure over empathy. With some coaching on 'reading the room' and adaptability, you can be exceptional.";
         colorClass = '#1976d2'; // Blue
-    } else if (totalScore >= 16) {
-        level = "Needs Mentoring";
-        message = "You show potential but may struggle with learner engagement or flexibility. Mentorship is recommended to develop a learner-first approach.";
+    } else if (totalScore >= 18) {
+        level = "Expert SME, limited learner focus";
+        message = "You are likely very skilled in your domain but may struggle to translate that into effective teaching. You tend to prioritize content or correctness over the learner's journey.";
         colorClass = '#f57c00'; // Orange
     } else {
-        level = "Not Learner-Centric";
-        message = "Your approach currently favors content over learners. Significant shift in mindset towards empathy and adaptability is required.";
+        level = "Knowledgeable but not suited for teaching-led roles";
+        message = "Your focus is heavily on tasks, efficiency, or personal delivery rather than enabling others. You might flourish as a solo contributor rather than a trainer.";
         colorClass = '#d32f2f'; // Red
     }
 
