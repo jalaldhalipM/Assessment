@@ -1,210 +1,206 @@
 const questions = [
-    // SECTION 1: Teaching Orientation
+    // SECTION 1: Situation Framing & Sensemaking
     {
         id: 1,
-        text: "During a session, you realize some learners are confused but time is limited. You:",
+        text: "You join an ongoing initiative midway, and progress seems uneven across people involved. Your first instinct is to:",
         options: [
-            { text: "Complete the topic as planned", score: 0 },
-            { text: "Briefly recap and move ahead", score: 1 },
-            { text: "Ask learners to review later", score: 0 },
-            { text: "Re-explain using a different approach", score: 2 }
+            { text: "Understand what success looks like before making changes", score: 2 },
+            { text: "Observe patterns quietly for a while", score: 1 },
+            { text: "Ask direct questions to identify gaps", score: 1 },
+            { text: "Start optimizing your own part immediately", score: 0 }
         ]
     },
     {
         id: 2,
-        text: "When introducing a new topic, you usually:",
+        text: "You’re given a broad objective with minimal constraints. You usually:",
         options: [
-            { text: "Start with definitions", score: 1 },
-            { text: "Follow slides strictly", score: 0 },
-            { text: "Use a simple real-world example", score: 2 },
-            { text: "Jump directly into advanced use cases", score: 0 }
+            { text: "Define your own structure and milestones", score: 1 },
+            { text: "Seek examples of how similar goals were achieved", score: 1 },
+            { text: "Clarify expectations with stakeholders", score: 2 },
+            { text: "Start experimenting and refine later", score: 1 }
         ]
     },
     {
         id: 3,
-        text: "A learner asks a question unrelated to the topic being taught.",
+        text: "While reviewing work done by others, you notice inconsistencies. You assume this is mostly due to:",
         options: [
-            { text: "Ignore it", score: 0 },
-            { text: "Ask them to ask later", score: 1 },
-            { text: "Briefly connect it to the topic", score: 2 },
-            { text: "Say it’s out of scope", score: 0 }
+            { text: "Differences in interpretation", score: 1 },
+            { text: "Lack of shared context", score: 2 },
+            { text: "Variations in experience", score: 1 },
+            { text: "Individual working styles", score: 1 }
         ]
     },
-    // SECTION 2: Emotional Intelligence & Empathy
     {
         id: 4,
-        text: "A learner says, “This is too difficult for me.”",
+        text: "When something feels “off” but you can’t pinpoint why, you tend to:",
         options: [
-            { text: "Encourage them to practice more", score: 1 },
-            { text: "Reassure them and simplify the explanation", score: 2 },
-            { text: "Suggest extra reading", score: 1 },
-            { text: "Continue with the class", score: 0 }
+            { text: "Trust your instinct and slow things down", score: 1 },
+            { text: "Collect more data points", score: 1 },
+            { text: "Discuss openly to surface assumptions", score: 2 },
+            { text: "Proceed cautiously and adjust later", score: 1 }
         ]
     },
     {
         id: 5,
-        text: "A learner appears disengaged during sessions.",
+        text: "In complex situations, clarity for you usually comes from:",
         options: [
-            { text: "Ignore and continue", score: 0 },
-            { text: "Ask them to focus", score: 1 },
-            { text: "Check privately what’s blocking them", score: 2 },
-            { text: "Assume lack of interest", score: 0 }
+            { text: "Breaking things into smaller parts", score: 1 },
+            { text: "Talking through it with others", score: 2 },
+            { text: "Visualizing the end result", score: 2 },
+            { text: "Trying a small action", score: 1 }
         ]
     },
+    // SECTION 2: Response Under Ambiguity
     {
         id: 6,
-        text: "A learner is frustrated after multiple attempts.",
+        text: "A decision must be made without complete information. You prefer to:",
         options: [
-            { text: "Ask them to retry", score: 1 },
-            { text: "Break the problem into smaller steps", score: 2 },
-            { text: "Tell them it takes time", score: 1 },
-            { text: "Move to the next learner", score: 0 }
+            { text: "Delay until more certainty exists", score: 0 },
+            { text: "Decide based on principles you trust", score: 2 },
+            { text: "Choose the least risky option", score: 1 },
+            { text: "Decide, knowing it can be corrected", score: 2 }
         ]
     },
-    // SECTION 3: Adaptability & Flexibility
     {
         id: 7,
-        text: "A teaching method is not working well. You:",
+        text: "When two reasonable approaches conflict, you usually:",
         options: [
-            { text: "Stick to it for consistency", score: 0 },
-            { text: "Try another explanation style", score: 2 },
-            { text: "Skip the topic", score: 0 },
-            { text: "Ask learners to self-study", score: 1 }
+            { text: "Pick the one that scales better", score: 1 },
+            { text: "Choose the one people align with", score: 1 },
+            { text: "Test both on a small scale", score: 2 },
+            { text: "Go with the familiar one", score: 0 }
         ]
     },
     {
         id: 8,
-        text: "Learners have mixed experience levels. You:",
+        text: "If a plan starts failing midway, your response is to:",
         options: [
-            { text: "Teach at an average pace", score: 1 },
-            { text: "Focus on advanced learners", score: 0 },
-            { text: "Use layered explanations", score: 2 },
-            { text: "Separate sessions", score: 1 }
+            { text: "Revisit assumptions", score: 2 },
+            { text: "Push through to completion", score: 0 },
+            { text: "Adjust scope and expectations", score: 1 },
+            { text: "Pause and reassess direction", score: 2 }
         ]
     },
     {
         id: 9,
-        text: "A learner understands theory but struggles in application.",
+        text: "When faced with resistance to change, you:",
         options: [
-            { text: "Repeat theory", score: 0 },
-            { text: "Provide step-by-step examples", score: 2 },
-            { text: "Ask them to practice more", score: 1 },
-            { text: "Ignore and continue", score: 0 }
+            { text: "Explain the rationale logically", score: 1 },
+            { text: "Listen first to concerns", score: 2 },
+            { text: "Demonstrate through action", score: 2 },
+            { text: "Escalate for alignment", score: 0 }
         ]
     },
-    // SECTION 4: Accountability & Ownership
     {
         id: 10,
-        text: "Many learners score low in assessments. You think:",
+        text: "Under pressure, your decision-making becomes:",
         options: [
-            { text: "Learners didn’t study enough", score: 0 },
-            { text: "Questions were tough", score: 1 },
-            { text: "Teaching approach may need improvement", score: 2 },
-            { text: "Learners lack basics", score: 0 }
+            { text: "Faster and more decisive", score: 1 },
+            { text: "More collaborative", score: 2 },
+            { text: "More conservative", score: 1 },
+            { text: "More focused on essentials", score: 2 }
         ]
     },
+    // SECTION 3: People Impact & Emotional Regulation
     {
         id: 11,
-        text: "Assignment submissions are delayed. You:",
+        text: "Someone working with you is capable but disengaged. You:",
         options: [
-            { text: "Penalize learners", score: 1 },
-            { text: "Extend deadline without discussion", score: 1 },
-            { text: "Clarify expectations and timelines", score: 2 },
-            { text: "Ignore delays", score: 0 }
+            { text: "Reduce dependency on them", score: 0 },
+            { text: "Address performance directly", score: 1 },
+            { text: "Try to understand motivation", score: 2 },
+            { text: "Compensate by doing more yourself", score: 0 }
         ]
     },
     {
         id: 12,
-        text: "A learner fails repeatedly. You:",
+        text: "When disagreements arise, you value most:",
         options: [
-            { text: "Suggest they drop the course", score: 0 },
-            { text: "Encourage and provide guidance", score: 2 },
-            { text: "Reduce difficulty", score: 1 },
-            { text: "Move ahead", score: 0 }
+            { text: "Reaching closure quickly", score: 0 },
+            { text: "Maintaining harmony", score: 1 },
+            { text: "Surfacing different viewpoints", score: 2 },
+            { text: "Protecting the original plan", score: 0 }
         ]
     },
-    // SECTION 5: Feedback & Growth Mindset
     {
         id: 13,
-        text: "You receive negative feedback. You:",
+        text: "Feedback that surprises you usually makes you:",
         options: [
-            { text: "Ignore it", score: 0 },
-            { text: "Defend your approach", score: 0 },
-            { text: "Reflect and improve", score: 2 },
-            { text: "Assume feedback is biased", score: 0 }
+            { text: "Question the source", score: 0 },
+            { text: "Reflect on blind spots", score: 2 },
+            { text: "Compare with other inputs", score: 1 },
+            { text: "Explain your intent", score: 0 }
         ]
     },
     {
         id: 14,
-        text: "Learners suggest a new learning format.",
+        text: "In group settings, you naturally:",
         options: [
-            { text: "Reject it", score: 0 },
-            { text: "Evaluate and experiment", score: 2 },
-            { text: "Delay decision", score: 1 },
-            { text: "Stick to existing format", score: 0 }
+            { text: "Take the lead", score: 1 },
+            { text: "Facilitate discussion", score: 2 },
+            { text: "Observe and intervene selectively", score: 2 },
+            { text: "Focus on execution", score: 1 }
         ]
     },
     {
         id: 15,
-        text: "After a session, you usually:",
+        text: "When someone struggles repeatedly, you believe progress comes from:",
         options: [
-            { text: "Move on to the next topic", score: 0 },
-            { text: "Ask learners if they understood", score: 1 },
-            { text: "Review what worked and didn’t", score: 2 },
-            { text: "Check attendance only", score: 0 }
+            { text: "Clearer expectations", score: 1 },
+            { text: "More practice", score: 1 },
+            { text: "Different framing", score: 2 },
+            { text: "Stronger accountability", score: 1 }
         ]
     },
-    // SECTION 6: Classroom Control & Professional Behaviour
+    // SECTION 4: Reflection, Learning & Ownership
     {
         id: 16,
-        text: "A learner interrupts frequently. You:",
+        text: "After completing something important, you usually:",
         options: [
-            { text: "Strictly warn them", score: 1 },
-            { text: "Ignore them", score: 0 },
-            { text: "Address politely and redirect", score: 2 },
-            { text: "End discussion", score: 0 }
+            { text: "Move on to the next priority", score: 0 },
+            { text: "Review outcomes against intent", score: 2 },
+            { text: "Collect feedback informally", score: 2 },
+            { text: "Document learnings", score: 2 }
         ]
     },
     {
         id: 17,
-        text: "Time is running out but learners have questions.",
+        text: "When results differ from expectations, you focus first on:",
         options: [
-            { text: "End immediately", score: 0 },
-            { text: "Answer briefly and share resources", score: 2 },
-            { text: "Skip remaining content", score: 1 },
-            { text: "Extend without control", score: 1 }
+            { text: "Execution gaps", score: 1 },
+            { text: "Decision quality", score: 2 },
+            { text: "External factors", score: 0 },
+            { text: "Alignment issues", score: 2 }
         ]
     },
-    // SECTION 7: Teaching Confidence vs Ego
     {
         id: 18,
-        text: "A learner offers a different solution.",
+        text: "Your learning usually accelerates when you:",
         options: [
-            { text: "Reject it", score: 0 },
-            { text: "Explore and discuss it", score: 2 },
-            { text: "Say your way is better", score: 0 },
-            { text: "Postpone discussion", score: 1 }
+            { text: "Teach others", score: 2 },
+            { text: "Face unfamiliar problems", score: 2 },
+            { text: "Receive strong feedback", score: 1 },
+            { text: "Review past work", score: 1 }
         ]
     },
     {
         id: 19,
-        text: "Learners question your explanation.",
+        text: "Over time, you believe expertise grows mainly from:",
         options: [
-            { text: "Get defensive", score: 0 },
-            { text: "Clarify calmly", score: 2 },
-            { text: "Ignore", score: 0 },
-            { text: "Blame misunderstanding", score: 0 }
+            { text: "Depth of experience", score: 1 },
+            { text: "Repeated practice", score: 1 },
+            { text: "Continuous reflection", score: 2 },
+            { text: "Exposure to diverse contexts", score: 2 }
         ]
     },
-    // SECTION 8: Cultural Fit & Learning Values
     {
         id: 20,
-        text: "Your main goal as a trainer is:",
+        text: "Looking back, you judge your effectiveness by:",
         options: [
-            { text: "Completing syllabus", score: 0 },
-            { text: "Sharing knowledge", score: 1 },
-            { text: "Ensuring learner success", score: 2 },
-            { text: "Maintaining authority", score: 0 }
+            { text: "Tasks completed", score: 0 },
+            { text: "Problems solved", score: 1 },
+            { text: "People enabled", score: 2 },
+            { text: "Standards maintained", score: 1 }
         ]
     }
 ];
